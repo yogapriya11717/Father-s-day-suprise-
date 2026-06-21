@@ -1,0 +1,173 @@
+body{
+    background:#F5EFE6;
+    font-family:Arial;
+    text-align:center;
+    padding-top:100px;
+}
+
+h1{
+    color:#8B7355;
+}
+
+input{
+    padding:10px;
+    width:250px;
+}
+
+button{
+    background:#8B7355;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    margin-top:10px;
+}.balloon-page{
+    text-align:center;
+    padding-top:100px;
+}
+
+.balloons button{
+    font-size:60px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    margin:20px;
+}
+
+#message{
+    margin-top:30px;
+    font-size:28px;
+    color:#8B7355;
+    font-weight:bold;
+}.balloon-page{
+    text-align:center;
+    padding-top:70px;
+}
+
+.balloons{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.balloon{
+    font-size:80px;
+    cursor:pointer;
+    transition:0.5s;
+    position:relative;
+    width:150px;
+    height:150px;
+}
+
+.balloon:hover{
+    transform:scale(1.1);
+}
+
+.popped{
+    animation:pop 0.5s ease;
+}
+
+.message{
+    font-size:20px;
+    color:#8B7355;
+    font-weight:bold;
+    padding-top:40px;
+}
+
+@keyframes pop{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.4);
+    }
+    100%{
+        transform:scale(0);
+    }
+}.memory-page{
+    text-align:center;
+    padding:40px;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:250px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}.letter-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.envelope{
+    font-size:100px;
+    cursor:pointer;
+}
+
+.letter-content{
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    line-height:2;
+    font-size:20px;
+    text-align:center;
+}.hearts{
+    font-size:40px;
+    margin-top:30px;
+    animation:floatHearts 2s infinite alternate;
+}
+
+@keyframes floatHearts{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-20px);
+    }
+}background:#FFF8F0;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+button{
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+.memory-card{
+    width:280px;
+    min-height:180px;
+    background:#FFF8F0;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    font-size:20px;
+    color:#5A4A3A;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    transition:0.4s;
+}
+
+.memory-card:hover{
+    transform:translateY(-10px);
+}
